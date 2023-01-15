@@ -1,0 +1,5 @@
+#+TITLE:linux
+
+* find your deleted images
+ on ~/.cache/thumbnails/ -> it stores the thumbnail of all your pictures until
+ you shutdown the pc
