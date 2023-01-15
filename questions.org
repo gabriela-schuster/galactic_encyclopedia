@@ -1,3 +1,0 @@
-* API
-Diz que quando o cliente confirma que tem interesse, o envio de email é suspenso,
-como é feita essa verificação? wordlist da resposta?
