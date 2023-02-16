@@ -10,6 +10,11 @@ at first, companies focused in increasing clock, as it measured the quality,
 (an 1800MHz was better than a 1600MHz),
 but after sometime, other things were put in balance
 
+*** smart cache
+as CPUs grew more complex, a more efficient form of storing data in cache was necessary,
+with smart cache, it became possible to store most frequently used data as close to the
+CPU as possible
+
 
 ** RAM memory
 + stores apps and info loaded by the CPU
