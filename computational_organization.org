@@ -1,0 +1,48 @@
+#+TITLE:computational organization
+
+* hardware
+
+** CPU
++ ALU: arithimetic logical unity: mathematical operations
++ clock: period which info are processed inside the ALU
++ cache: fastest and smallest memory, inside the CPU
+at first, companies focused in increasing clock, as it measured the quality,
+(an 1800MHz was better than a 1600MHz),
+but after sometime, other things were put in balance
+
+
+** RAM memory
++ stores apps and info loaded by the CPU
++ stores data used while processing other data
++ not sequencial, you can access an address at any given time, (Random Access Memory)
++ only works if has electrical currency
++ has storage (4MB) and velocity (1600mhz)
+
+
+** permanent memory
++ RAM only stores data if it's provided with energy, if not, all data is lost
++ actually, HDs and SSDs lead this market
+
+
+** motherboard
++ periferals, CPU and memory are attached to it (system bus [barramento])
++ provides inergy
+
+
+* software
+
+** OS (operating system)
++ abstraction so apps run above it don't need to know what's below (hardware)
++ alocates memory in main memory (RAM)
++ gives processes access to CPU
++ history
+  + in the 70s, UNIX is created
+  + in the 80s, Ms DOS is created
+  + the feature of windows in OSs made a big difference in the market
+  + actually, embedded systems are the news
+
+
+** internet
++ in the 70s, the americans connected many computers so they could comunicate (ARPANET)
++ many networks quickly emerged, becoming the internet
+
