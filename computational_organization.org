@@ -2,7 +2,7 @@
 
 * hardware
 
-** CPU
+** CPU :alu:clock:cache:smart_cache:
 + ALU: arithimetic logical unity: mathematical operations
 + clock: period which info are processed inside the ALU
 + cache: fastest and smallest memory, inside the CPU
@@ -15,8 +15,24 @@ as CPUs grew more complex, a more efficient form of storing data in cache was ne
 with smart cache, it became possible to store most frequently used data as close to the
 CPU as possible
 
+*** example of a CPU instruction
+[[./images/cpu_instruction.jpg]]
+=C. op: Operation code (ADD in this case)=
 
-** RAM memory
+*** CPU parts
++ control
+  + control unit (controls I/O data)
+  + instruction decodificator (decodes what a bunch of 0s and 1s mean [value? operation?])
+    see IR in [[*registers][registers]]
++ processing
+
+*** registers
++ IR (instruction register): stores operation to be executed
++ IC (instruction counter): stores address of next RAM data to be read
++ PSW: detects anything wrong
+
+
+** RAM memory :memory:
 + stores apps and info loaded by the CPU
 + stores data used while processing other data
 + not sequencial, you can access an address at any given time, (Random Access Memory)
@@ -29,12 +45,47 @@ CPU as possible
 + actually, HDs and SSDs lead this market
 
 
-** motherboard
-+ periferals, CPU and memory are attached to it (system bus [barramento])
+** motherboard :bus:DB:AB:CB:
 + provides inergy
++ periferals, CPU and memory are attached to it (system bus [barramento em português])
+
+*** bus
++ DB (data bus): CPU <-> component
++ AB (address bus): CPU -> RAM
++ CB (control bus): anything <-comunication-> anything
+
+[[./images/bus.jpg]]
+=BC = CB, BE = AB, BD = DB=
+
+*example case*: CPU nedds data stored at memory adress 37, a BE with 10 "wires"
+would carry the value 0000100101, after the memory retrieves the value at adress 37,
+the data "7510" would be carried by the DB, the data about clock (it is necessary to make it synchronous),
+and other things are carried by the CB
+
+*fun fact*: the amount of all the bus wires is equal to the CPU pins
+
+**** find the number of addresses addressed by the bus :address:AD:convert:binary:
+*N = 2^L*
+=N = addressable memory addressed=
+=L = DB band=
+
+*or be: find a number that 2^it is equal to the supported addresses*
+
+ex: a CPU adresses 4MB of adresses, whats the band of the AB?
++ 4MB = 2^L
+  + 4MB = 2^2 (4) + 2^20 (MB)
++ 4MB = 2^22 (22 bits)
+
+table of conversion
+| unity | value |
+| 1k    |   2^10 |
+| 1M    |   2^20 |
+| 1G    |   2^30 |
+| 1T    | 2^40   |
 
 
-** CISC vs RISC computers:
+
+** CISC vs RISC computers :CISC:RISC:
 + cisc are the machines we use normally
 + risc are expensive
 
