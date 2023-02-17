@@ -34,6 +34,23 @@ CPU as possible
 + provides inergy
 
 
+** CISC vs RISC computers:
++ cisc are the machines we use normally
++ risc are expensive
+
+| CISC                                         | RISC                                |
+|----------------------------------------------+-------------------------------------|
+| complex instructions taking multiple cycles  | simple instructions taking 1 cycles |
+| any instruction may reference memory         | only LOADS/STORES reference memory  |
+| not pipelined or less pipelined              | highly pipelined                    |
+| instructions interpreted by the microprogram | instructions executed by hardware   |
+| variable format instructions                 | fixed format instructions           |
+| many instructions and models                 | few instructions and models         |
+| complexity is in the microprogram            | complexity is in the compiler       |
+| single register set                          | multiple register set               |
+|----------------------------------------------+-------------------------------------+
+
+
 * software
 
 ** OS (operating system)
