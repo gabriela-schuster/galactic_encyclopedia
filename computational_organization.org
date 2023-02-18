@@ -27,17 +27,43 @@ CPU as possible
 + processing
 
 *** registers
-+ IR (instruction register): stores operation to be executed
-+ IC (instruction counter): stores address of next RAM data to be read
++ IR (instruction register): stores executing instruction
++ PC (program counter): stores address to load next instruction
++ MAR (memory address register): external memory transference adress
++ MBR (memory buffer register): external memory data to transfer
 + PSW: detects anything wrong
 
 
-** RAM memory :memory:
+** RAM memory :memory:calculate:DRAM:SRAM:
 + stores apps and info loaded by the CPU
 + stores data used while processing other data
 + not sequencial, you can access an address at any given time, (Random Access Memory)
 + only works if has electrical currency
 + has storage (4MB) and velocity (1600mhz)
+
+*** SRAM or DRAM:
+| SRAM                     | DRAM                                                   |
+| 1b = 5/7 transistors     | 1b = 1 transistor AND 1 capacitor                      |
+| don't require recharging | uses capacitor to store value, so it needs to recharge |
+| used as cache memory     | used as main memory                                    |
+
+**** DRAM can be:
++ synchronous
+  synchronized with CPU (SDRAM, DDR, DDR2)
++ asynchronous
+  not synchronized with CPU (DRAM, FPM, EDO, BEDO)
+
+*** classification according to the module type
++ SIMM (single In line Memory Module): one electrical contact is equal to the another
++ DIMM (Dual In line Memory Module): two sides are independent
+
+*** calculate total adresses in memory
+*N = 2^E*
+=E = adress band=
+=N = number of adresses=
+ex: if the memory stores 6 bits in each adress
+  + N = 2^6
+  + N = 64 adresses
 
 
 ** permanent memory
@@ -104,7 +130,7 @@ table of conversion
 
 * software
 
-** OS (operating system)
+** OS (operating system) :batch:real-time:time-sharing:
 + abstraction so apps run above it don't need to know what's below (hardware)
 + alocates memory in main memory (RAM)
 + gives processes access to CPU
@@ -113,9 +139,19 @@ table of conversion
   + in the 80s, Ms DOS is created
   + the feature of windows in OSs made a big difference in the market
   + actually, embedded systems are the news
++ are classified in *batch*, *real-tme* and *time-sharing*
+  + batch: manages multiple jobs in parallel
+  + real-time (RTOS): a large number of events are processed in a short time (ex: airline traffic control)
+  + time sharing: CPU performs many tasks by switches are so frequent that
+    the user can interact with each program while it is running, allows multiple users (ex: linux)
 
 
 ** internet
 + in the 70s, the americans connected many computers so they could comunicate (ARPANET)
 + many networks quickly emerged, becoming the internet
 
+
+** drivers
++ code to control a specific device
++ can be serial or paralel
+  [[./images/paralel_serial_drivers.jpg]]
