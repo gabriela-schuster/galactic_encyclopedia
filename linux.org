@@ -1,19 +1,17 @@
+#+FILETAGS: @linux
+
 #+TITLE:linux
 
-* find your deleted images
+* find your deleted files
+ted images
  on ~/.cache/thumbnails/ -> it stores the thumbnail of all your pictures until
  you shutdown the pc
 
 
-* melhorias na forma que a gente salva os dados de decisores
- antigamente (antigamente vulgo 1 semana atras) demorava alguns minutos pra inserir todos os emails no nosso banco,
- ficava minutos fazendo requisição pro atlas direto, o que as vezes acabava derrubando a api do Atlas, o que não é muito legal
- demorava pra começar os envios de emails, isso tudo,
+* disable ipv6                                                 :ipv6:disable:
 
- agora demora bem menos pra fazer essa busca (-1 de minuto pra uma campanha grande), e não tem mais chance de derrubar o Atlas ou sermos bloqueados por suspeita de DoS
+ #+BEGIN_EXAMPLE
+   sysctl -w net.ipv6.conf.all.disable_ipv6=1
+ #+END_EXAMPLE
 
-* foi criptografar as senhas de app dos clientes
-testar uma criptografia, dai nao ser a melhor, dai testar uma melhor, dai ela nao funcionar
 
-no final eu taquei o código no gpt, e falei "arruma ai", dai ela não deu a solução, inclusive bugou mais ainda
-eu resolvi paranto, tomando uma água, indp ver a luz do dia, sempre bom, dai eu voltei com cabeça limpa, e resolvi em 5 minutos
