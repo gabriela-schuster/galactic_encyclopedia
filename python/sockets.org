@@ -1,0 +1,20 @@
+#+TITLE:sockets
+#+FILETAGS: :python:sockets:
+
+* create sockets                                                     :create:
+#+begin_src python
+  import socket
+
+  server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  server.bind(('', 1234))
+  server.listen(5)
+  input(f'the sock is listening\nsocket: {server}')
+#+end_src
+
+breaking down:
++ =AF_INET=: ipv4
++ =SOCK_STREAM=: TCP
++ bind: sockets config
+  + '': ip list (empty means everyone)
+  + 1234: port which it will run on
++ listen: how many hosts can connect to the socket at the same time
