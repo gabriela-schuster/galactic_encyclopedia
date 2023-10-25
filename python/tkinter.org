@@ -25,7 +25,10 @@
   window.geometry('500x400')
   window.resizable(False, False)
 
-  button = Button(window, text='i am a button')
+  def execute_on_click():
+      print('ouch! you clicked me')
+
+  button = Button(window, text='i am a button', command=execute_on_click)
   button.place(x=450, y=5)
 
   window.mainloop()
