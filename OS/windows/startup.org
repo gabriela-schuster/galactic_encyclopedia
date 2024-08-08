@@ -1,9 +1,0 @@
-#+title:run programs at startup
-#+filetags: :windows:run:startup:
-
-* path to startup:
-#+begin_example
-C:\ProgramData\Microsoft\Windows\Start Menu\Startup'
-#+end_example
-
-simply put an .exe file in thes folder and it will run at each boot

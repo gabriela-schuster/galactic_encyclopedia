@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Material Gruvbox",
+  "theme": "obsidian",
+  "textFontFamily": "Space Mono",
+  "interfaceFontFamily": "Space Mono",
+  "monospaceFontFamily": "Space Mono",
+  "showViewHeader": true,
+  "nativeMenus": false
+}

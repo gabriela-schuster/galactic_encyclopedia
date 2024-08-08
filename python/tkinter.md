@@ -1,0 +1,106 @@
+#+title:tkinter
+#+filetags: :python:tkinter:
+
+* main window and its properties
+#+begin_src python
+  from tkinter import *
+
+
+  window = Tk()
+  window.title('window title')
+  window.geometry('500x400')
+  window.resizable(False, False)
+
+  window.mainloop()
+#+end_src
+
+
+* button                                                             :button:
+#+begin_src python
+  from tkinter import *
+
+
+  window = Tk()
+  window.title('window title')
+  window.geometry('500x400')
+  window.resizable(False, False)
+
+  def execute_on_click():
+      print('ouch! you clicked me')
+
+  button = Button(window, text='i am a button', command=execute_on_click)
+  button.place(x=450, y=5)
+
+  window.mainloop()
+#+end_src
+
+
+* label                                                               :label:
+#+begin_src python
+  from tkinter import *
+
+
+  window = Tk()
+  window.title('window title')
+  window.geometry('500x400')
+  window.resizable(False, False)
+
+  label = Label(window, text='i am a label')
+  label.place(x=5, y=5)
+
+  window.mainloop()
+#+end_src
+
+
+* entry                                                               :entry:
+#+begin_src python
+  from tkinter import *
+
+
+  window = Tk()
+  window.title('window title')
+  window.geometry('500x400')
+  window.resizable(False, False)
+
+  entry = Entry(window, width=65)
+  entry.place(x=45, y=5)
+
+  window.mainloop()
+#+end_src
+
+
+* listbox                                                             :list:listbox:
+#+begin_src python
+  from tkinter import *
+
+
+  window = Tk()
+  window.title('window title')
+  window.geometry('500x400')
+  window.resizable(False, False)
+
+  lb = Listbox(window, selectmode=MULTIPLE)
+  lb.insert(1, 'banana')
+  lb.insert(1, 'apple')
+  lb.insert(1, 'watermellon')
+  lb.place(x=5, y=55)
+
+  window.mainloop()
+#+end_src
+
+
+* text                                                         :text:textbox:
+#+begin_src python
+  from tkinter import *
+
+
+  window = Tk()
+  window.title('window title')
+  window.geometry('500x400')
+  window.resizable(False, False)
+
+  tx = Text(window, width=200)
+  tx.place(x=250, y=55)
+
+  window.mainloop()
+#+end_src
