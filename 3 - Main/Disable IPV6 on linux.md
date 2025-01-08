@@ -7,6 +7,3 @@ Tags: [[linux]] [[IPV6]]
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
 ```
-
-# References
-

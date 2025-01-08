@@ -5,5 +5,3 @@ Tags: [[testing]]
 # Integration testing
 
 
-
-# References

@@ -1,10 +1,6 @@
-{{date:DD-MM-YYYY}} {{time}}
+Date: {{date:DD-MM-YYYY}} {{time}}
 
 Tags:
 
-# {{Title}}
-
-
-
-# References
+---
 

@@ -7,5 +7,23 @@
       ],
       "key": "T"
     }
+  ],
+  "editor:open-link-in-new-leaf": [],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Enter"
+    }
   ]
 }
